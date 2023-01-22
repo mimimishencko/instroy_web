@@ -1,0 +1,118 @@
+.header-container {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  .logo-icon-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+
+    .logo-icon {
+      margin-top: 20px;
+    }
+  }
+}
+
+.header-menu-container {
+  background-color: #313131;
+  color: #fff;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: auto auto ;
+  flex: 3;
+
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .menu-list-item {
+      float: left;
+      cursor: pointer;
+    }
+  }
+
+  .contacts-container {
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 50px;
+
+    .email {
+      color: #fff;
+    }
+  }
+}
+
+.first-section {
+  display: flex;
+  overflow-x: hidden;
+
+  &__main-container {
+    flex: 1;
+
+
+    .text-rect {
+      width: 480px;
+      height: 430px;
+      border: 3px solid rgba(189, 15, 15, 0.6);
+      border-right: none;
+      margin-top: 50px;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      padding-left: 110px;
+      padding-top: 50px;
+      position: relative;
+
+
+      &__primary-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #313131;
+        line-height: 40px;
+      }
+
+      &__secondary-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #313131;
+        width: 60%;
+        margin-top: 35px;
+        line-height: 20px;
+      }
+
+      &__link {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 31px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #313131;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        bottom: 80px;
+        right: 50px;
+
+        img {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  &__picture {
+    flex: 2;
+    display: contents;
+  }
+}
